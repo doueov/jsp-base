@@ -11,6 +11,9 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().append("HIHI");
+        resp.setCharacterEncoding("UTF-8"); // 들어오는 데이터를 utf-8로 해석
+        resp.setCharacterEncoding("UTF-8"); // 완성되는 HTML의 인코딩을 UTF-8로 하겠다.
+        resp.setContentType("text/html; charest=utf-8");    // 브라우저에게 우리가 만든 결과물이 utf-8임을 알림
+        resp.getWriter().append("안녕");
     }
 }
