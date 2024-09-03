@@ -25,7 +25,8 @@
         }
     %>
 
-    <a href="shop.jsp"></a>
+    <a href="shop.jsp">쇼핑 계속하기</a>
+    <a href="DeleteAllCart.jsp">쇼핑 카트 비우기</a>
 
 </body>
 </html>
