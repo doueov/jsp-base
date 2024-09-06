@@ -13,6 +13,7 @@
         ArrayList<String> cart = (ArrayList<String>) session.getAttribute("cart");
         if(cart = null &&cart.isEmpty()) {
     %>
+
         <ul>
             <% for (String item : cart){ %>
                 <li><%=item%></li>
